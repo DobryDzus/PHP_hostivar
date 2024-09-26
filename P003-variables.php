@@ -104,7 +104,66 @@
     $exponent = 5 ** 9;
 
     //spojeni retezcu promennych a hodnot [.]
-    echo "thle je ukazka spojeni text a promenne ".$nasobeni." tohle je dalsi text";
+    echo "tohle je ukazka spojeni text a promenne ".$nasobeni." tohle je dalsi text";
+
+    echo "<h3>relacni operatory</h3>";
+    //porovnani hodnot
+    
+    // rovno [==]
+    $vek_kamose = 18;
+    echo"<br>";
+    if ($vek_kamose == 18) {
+        echo "vsechno nejlepsi";
+    } else {
+        echo "nemas narozky kamo";
+    }
+    echo "<br>";
+
+    //nerovno [!=]
+    if ($vek_kamose != 0) {
+        echo "co tu delas za finty bro";
+    }
+
+
+    // vetsi nez [>]
+    if ($vek_kamose > 18) {
+        echo "uz muzes pit fetko";
+    }
+    echo "<br>";
+    //mensi nez [<]
+    if ($vek_kamose < 18) {
+        echo "nemuzes pit bro";
+    }
+    echo "<br>";
+    //mensi nebo rovno [<=]
+    if ($vek_kamose <= 14) {
+        echo "nemuzes pit bro";
+    }
+
+    //vetsi nebo rovno je to stejny jak to nahore ale nechci to psat bleeh
+
+
+    echo "<br>";
+    echo "<h3>logicke operatory</h3>";
+    //logicky operacie (propojeni, spojeni, negace)
+    //AND [&&] musi byt splneny vsechny podminky
+    
+    $vek_kamarada = 16;
+    $darek = "ano";
+    $dresscode = "ano";
+
+    if ($vek_kamarada >= 16 && $darek == "ano" && $dresscode == "ano") {
+        echo "jsi pozvany bro";
+
+    }
+
+    //OR [||] nebo
+    //STACI SPLNENI JEDNE PODMINKY
+    echo "<br>";
+    if ($vek_kamarada > 16 || $darek == "ano" && $dresscode == "ano") {
+        echo "jsi pozvany bro";
+
+    }
     ?>
 
 
