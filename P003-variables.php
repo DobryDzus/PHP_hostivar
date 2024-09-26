@@ -164,6 +164,11 @@
         echo "jsi pozvany bro";
 
     }
+
+    //NOT [! ktery se pripojue k dalsimu operatutu] negace nejde pouzit na vsechno
+    if ($vek_kamarada <! 6) {
+        echo "neni ti 6 let";
+    }
     ?>
 
 
