@@ -166,7 +166,7 @@
     }
 
     //NOT [! ktery se pripojue k dalsimu operatutu] negace nejde pouzit na vsechno
-    if ($vek_kamarada <! 6) {
+    if ($vek_kamarada =! 4) {
         echo "neni ti 6 let";
     }
     ?>
