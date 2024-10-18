@@ -50,8 +50,8 @@ echo count($pole); // vypise pocet pozic v poli ; konecnce neco zajimavyho
 
 echo "<br>";
 
-$ciselnepole = array(1,2,3); // soucet pozic v arrayi
-echo array_sum($ciselnepole );
+$ciselnepole = array(1,2,3); 
+echo array_sum($ciselnepole ); //vypsani souctu pozic v arrayi
 
 echo "<br>";
 
@@ -60,6 +60,37 @@ $vysledek = array_sum($ciselnepole) / count($ciselnepole); // vypocet prumeru
 echo $vysledek; // vypsani promenne prumeru
 
 echo "<br>";
+
+$stejnehodnoty = array("banan", "max", "vitek", "banan");
+$pole_stejnehodnoty = array_unique($stejnehodnoty); // odstraneni duplikatu z arraye
+print_r($pole_stejnehodnoty);
+
+echo "<br>";
+
+// odebrani prvku z arraye - pop, shift, unset
+
+array_pop($pole_stejnehodnoty); // array_pop odebira posledni polozku v arrayi
+print_r($pole_stejnehodnoty); 
+
+echo "<br>";
+
+array_shift($pole_stejnehodnoty); // array_shift odebira prvni polozku v arrayi
+print_r($pole_stejnehodnoty);
+
+echo "<br>";
+
+unset($pole_stejnehodnoty[0]); // unset, pise se pouze unset, odebira vybrane pole v []
+print_r($pole_stejnehodnoty);
+
+echo "<br>";
+
+// spojeni vice poli dohromady
+
+$pole22 = array("ahoj", "cs", "pribinacek");
+$pole23 = array("vitek", "yehorek", "vanmax23");
+
+$pole_stejnehodnoty = array_merge($pole22, $pole23);
+print_r($pole_stejnehodnoty);
 
 
 
