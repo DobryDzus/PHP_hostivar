@@ -2,7 +2,7 @@
 
 $ovoce = array("Meloun", "Banán", "Rajče", "Mrkev");
 
-echo $ovoce[2];
+echo $ovoce[1];
 
 echo "<br>";
 
@@ -12,7 +12,7 @@ echo "<br>";
 
 echo count($ovoce);
 
-echo "<br>";
+echo "<br>"; 
 
 print_r($ovoce);
 
