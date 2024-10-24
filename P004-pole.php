@@ -6,6 +6,11 @@ $pole = array("jabko", "hruska", "vitek");
 
 print_r($pole); //vypis array 
 
+echo "<br>";
+
+$zkracene_pole = ["ukazka1", 2];
+print_r($zkracene_pole);
+
 
 echo "<br>";
 echo "<br>";
@@ -91,6 +96,27 @@ $pole23 = array("vitek", "yehorek", "vanmax23");
 
 $pole_stejnehodnoty = array_merge($pole22, $pole23);
 print_r($pole_stejnehodnoty);
+
+echo "<br>";
+
+//razeni pole - sort, rsort, asort, ksort
+
+$razene_pole = array(1, 4, 2, 6, 88, 22, 12, 3); //seradi od A/ nejmensiho do Z/ nejvetsiho
+sort($razene_pole);
+print_r($razene_pole);
+
+echo "<br>";
+
+rsort($razene_pole); // opacne serazeni
+print_r($razene_pole);
+
+echo "<br>";
+
+// vystup pole jako retezec - implode 
+
+$pole_text = implode(",", $pole);
+
+echo $pole_text;
 
 
 
