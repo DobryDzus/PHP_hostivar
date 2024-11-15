@@ -7,6 +7,12 @@
     <title>Document</title>
 </head>
 <body>
+    <!--
+
+    require: Ukončí skript při chybě.
+    include: Zobrazí varování a pokračuje ve vykonávání skriptu.
+    
+    -->
     <h1>tady je nize umisten obsah souboru P009-test_i.html</h1>
     <?php
         include "P009-test_i.html"
