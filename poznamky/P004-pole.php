@@ -33,6 +33,8 @@ echo "<br>";
 $pole[0] = "yehorek"; // prida na konkretni pozici (das do zavorky cislo), pokud tam uz nejaka byla, tak ji prepise :(
 print_r($pole);
 
+array_push($pole , "ahoj");
+
 echo "<br>";
 
 $vicerozmernepole = array(
