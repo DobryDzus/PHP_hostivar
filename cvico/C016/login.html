@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="data.php" method="get">
+        <label for="dospeli">Počet dospělích</label>
+        <input type="number" name="dospeli" id="">
+        <br>
+
+        <label for="deti">Počet decek</label>
+        <input type="number" name="deti" id="">
+        <br>
+
+        <label for="sleva">Sleva</label>
+        <select name="sleva" id="">
+            <option value=""></option>
+            <option value="1">Beze slevy</option>
+            <option value="0.75">25%</option>
+            <option value="0.50">50%</option>
+        </select>
+        <br>
+
+        <input type="submit" value="Odoslať">
+    </form>
+</body>
+</html>
