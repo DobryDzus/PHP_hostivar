@@ -19,7 +19,7 @@ $jmeno = "patrik";
 
     <h2>
         <?php
-        echo "ahoj, jmenuju se ".$jmeno;
+        echo "ahoj, jmenuju se ".$jmeno;    
         ?>
     </h2>
 </body>
