@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        color: white;
+    }
+</style>
+<body>
+    <form class="formular" action="sber.php" method="POST">
+        <label for="jmeno">Jméno</label>
+        <input type="text" name="jmeno" id="" required>
+        <br>
+        <label for="prijmeni">Příjmení</label>
+        <input type="text" name="prijmeni" id="" required>
+        <br>
+            <label for="muz">Muž</label>
+            <input type="radio" name="muz" id="">
+            <label for="zena">Žena</label>
+            <input type="radio" name="zena" id="">
+            <label for="neuvadet">Nechci uvést</label>
+            <input type="radio" name="neuvadet" id="">
+
+        <br>
+        <label for="datumnar">Datum narození</label>
+        <input type="date" name="datumnar" id="" required>
+        <br>
+        <label for="zabezpeceno">Zabezpečeno</label>
+        <input type="checkbox" name="zabezpeceno" id="" required>
+        <br>
+
+        <input type="submit" value="Odoslať" class="submit">
+    </form>
+</body>
+</html>
