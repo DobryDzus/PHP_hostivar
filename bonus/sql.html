@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--  
+    datove typy v SQL
+    INT(v zavorce se pise kolik characters se vypise napr.:5 vypise prvnich 5 znaku. default je 11) "45684"22 - cele cislo - 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+    BIGINT - vetsi cisla 
+    FLOAT - desetinna cisla
+    DOUBLE - vetsi desetinna cisla
+
+    VARCHAR(defaultne 1) - text 
+    VARCHAR(255) - text s delkou 255 znaku
+
+    TEXT - dlouhy text
+
+    DATE - datum - 2020-12-31
+    DATETIME - datum a cas - 2020-12-31 12:30:00
+
+    SIGNED x UNSIGNED
+    SIGNED - zaporna i kladna cisla
+    UNSIGNED - pouze kladna cisla
+
+
+    vytvoreni tabulky v databazi pres phpmyadmin
+    CREATE TABLE users (
+        id INT(11) NOT NULL AUTO_INCREMENT,
+        username VARCHAR(30) NOT NULL,
+        pwd VARCHAR(255) NOT NULL,
+        email VARCHAR(100) NOT NULL,
+        created_at DATETIME NOT NULL DEFAULT CURRENT_TIME,
+        PRIMARY KEY (id)
+    );
+
+    vytvoreni tabulky s refenenci na jinou tabulku
+    CREATE TABLE comments (
+        id INT(11) NOT NULL AUTO_INCREMENT,
+        username VARCHAR(30) NOT NULL,
+        comment_text TEXT NOT NULL,
+        created_at DATETIME NOT NULL DEFAULT CURRENT_TIME,
+        users_id INT(11),
+        PRIMARY KEY (id),
+        FOREIGN KEY (users_id) REFERENCES users (id) ON DELETE SET NULL
+    );
+
+
+    ukaze radky kde je v tabulce users id stejne jako v tabulce comments users_id
+    SELECT * FROM users INNER JOIN comments ON users.id = comments.users_id;
+
+
+    ukaze vsechny radky z tabulky users a k nim priradi radky z tabulky comments kde je v tabulce users id stejne jako v tabulce comments users_id
+    SELECT * FROM users LEFT JOIN comments ON users.id = comments.users_id;
+    -->
+</body>
+</html>
